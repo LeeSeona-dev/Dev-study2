@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:none</title>
+    <style>
+        .answer{
+            display: none;
+        }
+
+        /* 1. 마우스를 질문 위에 올린다면 =>질문:hover
+           2. 질문과 근접후행 관계인 answer를 보이게 =>+
+           3. 답을 한 줄 밑에 뜨도록 => display : block
+            */
+        .question:hover+.answer{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h3> display : none</h3>
+    <span class = "question">Q. 제가 가장 좋아하는 음료는 무엇일까요?</span>
+    
+    <span class="answer">A.아이스아메리카노, 고구마라떼, 요거트스무디</span>
+    <br>
+
+    <span class = "question">Q. 저의 mbti는 무엇일까요?</span>
+    <span class="answer">A. INFP💕</span>
+    <!-- 
+        Q. 저의 mbti는 무엇일까요?
+        A.XXXX
+
+        퀴즈를 추가하기!
+        단, css는 수정할 필요가 없음
+     -->
+</body>
+</html>

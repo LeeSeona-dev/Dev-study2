@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크기단위</title>
+
+    <style>
+        /* 크기 단위 */
+        /* 1. px : 화소 하느의 크기에 대응 되는 단위(고정값) */
+        #span1{
+            font-size: 10px;
+        }
+
+        /* 2. em : 부모 요소 크기를 기준으로 하는 상대 배수 단위 */
+        p{
+            font-size: 10px;
+        }
+
+        #span2{
+            font-size: 2em;
+            /* 2em : 부모 크기의 2배 */
+        }
+
+        /* 3. rem : 문서의 폰트 크기에 따른 배수단위 */
+        #span3{
+            font-size:  2rem;
+            /* ex) 2rem : 현재 문서 폰트 크기의 2배 (디폴트 크기 16px) */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <span id="span1">px로 조정</span>
+    <p>
+        <span id="span2">
+            em으로 조정
+        </span>
+    </p>
+    <br>
+    <span id="span3">rem으로 조정</span>
+</body>
+</html>
