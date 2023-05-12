@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10padding</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: palegreen;
+
+            /* padding
+                테두리를 기준으로 요소의 안쪽 여백을 지정하는 속성
+                테두리와 내용 사이에 있는 여백이기 때문에
+                요소의 성질을 따른다. */
+                padding : 30px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: powderblue;
+            padding: 0px;
+        }
+        #box2{
+            background-color: palegreen;
+            padding-left: 100px;
+        }
+        #box3{
+            background-color:bisque;
+            padding-left: 200px;
+        }
+        #box4{
+            background-color: palevioletred;
+            padding-left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">content</div>
+
+    <h2>실습시작</h2>
+    <div class="box" id="box1">Box</div>
+    <div class="box" id = "box2">Box</div>
+    <div class="box" id = "box3">Box</div>
+    <div class="box" id = "box4">Box</div>
+    
+</body>
+</html>
